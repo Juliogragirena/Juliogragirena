@@ -1,0 +1,38 @@
+/* reglas
+seelectores
+declaraciones 
+propiedades
+valores */
+
+/* selector de etiqueta */
+header{
+    background: rgb(170, 206, 39) ;
+    text-decoration:none
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+/* selector de descendente */
+/* body header div nav ol li a  */
+
+/* selector de clase */
+
+/* .link {
+    background-color: red;
+} */
+
+/* selector de id */
+/* #contacto {
+    background-color: red;
+} */
