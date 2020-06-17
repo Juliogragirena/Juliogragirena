@@ -11,9 +11,9 @@
 </head>
 <body>
     <header class="header">
-        <div>
+        <div class="container">
             <figure class="logo">
-                <img src="./src/assets/static/logo.png"alt="Logo de julio" />
+                <img src="./src/assets/static/logo.png"alt="Logo de julio"  width="100px" height="100px"/>
             </figure>
             <nav class="menu">
                 <ol>
@@ -21,7 +21,7 @@
                         <a class="link"  href="#portafolio">Portafolio</a>
                     </li>
                     <li>
-                        <a class="link" href="#experiencia">Experiencia</a>
+                        <a class="link" href="#titulo-experiencias">Experiencia</a>
                     </li>
                     <li>
                         <a class="link" href="#contacto">Trabajemos Juntos</a>
@@ -31,13 +31,16 @@
         </div>
     </header>
     <section class="hero">
-        <h1>Hola! Soy <strong class="julio">Julio Gragirena<br/> Desarrollador web </strong>principiante 
-            <br/>Actualmente estudio por mi <br/> cuenta con la ayuda de <strong>platzi.com</strong>
-        </h1>
-        <!-- <img src="./src/assets/static/FOTO.png" alt="falta imagen" width="500" height="400"/> -->
+        <div class="container">
+            <h1>Hola! Soy <strong class="julio">Julio Gragirena<br/> Desarrollador web </strong>principiante 
+                <br/>Actualmente estudio por mi <br/> cuenta con la ayuda de <strong>platzi.com</strong>
+            </h1>
+            <img class="hero-image" src="./src/assets/static/FOTO.png" alt="falta imagen" width="500" height="400"/>
+        </div>
     </section>
     <section class="portfolio" id="portafolio">
-        <h2>Portafolio (Proyectos Personales)</h2>
+        <div class="container">
+            <h2>Portafolio (Proyectos Personales)</h2>
             <article class="project">
                 <div class="project-details">
                     <h3 class="project-title">Platzi Video</h3>
@@ -45,7 +48,7 @@
                     <p class="project-date"><small><strong>Fecha:</strong> 07/07/2020</small></p>
                     <p class="project-url"><small><strong>Puedes verlo en: </strong><a href="https://juliogragirena.github.io/">https://github.com/Juliogragirena?tab=repositories</a></small></p>
                     <p class="project-description">Es una aplicacion del curso de REACTjs dictado por 
-                        OSCAR BARAJAS sssssssssssssssssssssssssssssssssssss</p>
+                        OSCAR BARAJAS sssssssssssssssss<br/></p>
                 </div>
                 <figure class="project-imageContainer">
                     <img class="project-image" src="./src/assets/static/logo.png" alt="Imagen del proyecto">
@@ -70,25 +73,69 @@
         <article>
             <h3>Proyecto 4</h3>
         </article>
+        </div>
     </section>
-    <section id="eventos">
-        <h2>Mas sobre mi Experiencia</h2>
-        <article class="event">
-            <figure class="event-imageContainer">
-                <img class="event-image" src="./src/assets/static/FOTO.png" alt="falta imagen" width="500" height="400" >
-            </figure>
-            <h3 class="event-title">PlatziConf Mexico 2020</h3>
-            <p class="event-description">Platzi una vez más, cómo todos los años, hace el evento más grande de comunidad tecnológica en los que apasionados por aprender, emprender e innovar se encuentran en un mismo lugar para escuchar a expertos de la industria que durante horas comparten su conocimiento</p>
-            <a class="event-url" href="https://www.youtube.com/watch?v=Nb_lsnx8BoQ&list=RDNb_lsnx8BoQ&start_radio=1" target="_blank">Ver Platica</a>
-        </article>
+    <div class="container">
+        <h2 class="titulo-experiencias" id="titulo-experiencias">Mas sobre mi Experiencia</h2>
+    </div>
+    <section id="experiencia" class="event-list">
+        <div class="container">
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="./src/assets/static/FOTO.png" alt="falta imagen" />
+                </figure>
+                <div class="event-detail">
+                    <h3 class="event-title">PlatziConf Mexico 2020</h3>
+                    <p class="event-description">Platzi una vez más, cómo todos los años, hace el evento más grande de comunidad tecnológica en los que apasionados por aprender, emprender e innovar se encuentran en un mismo lugar para escuchar a expertos de la industria que durante horas comparten su conocimiento</p>
+                    <a class="event-url" href="https://www.youtube.com/watch?v=Nb_lsnx8BoQ&list=RDNb_lsnx8BoQ&start_radio=1" target="_blank">Ver Platica</a>
+                </div>
+            </article>
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="./src/assets/static/FOTO.png" alt="falta imagen" />
+                </figure>
+                <div class="event-detail">
+                    <h3 class="event-title">PlatziConf Mexico 2020</h3>
+                    <p class="event-description">Platzi una vez más, cómo todos los años, hace el evento más grande de comunidad tecnológica en los que apasionados por aprender, emprender e innovar se encuentran en un mismo lugar para escuchar a expertos de la industria que durante horas comparten su conocimiento</p>
+                    <a class="event-url" href="https://www.youtube.com/watch?v=Nb_lsnx8BoQ&list=RDNb_lsnx8BoQ&start_radio=1" target="_blank">Ver Platica</a>
+                </div>
+            </article>
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="./src/assets/static/FOTO.png" alt="falta imagen" />
+                </figure>
+                <div class="event-detail">
+                    <h3 class="event-title">PlatziConf Mexico 2020</h3>
+                    <p class="event-description">Platzi una vez más, cómo todos los años, hace el evento más grande de comunidad tecnológica en los que apasionados por aprender, emprender e innovar se encuentran en un mismo lugar para escuchar a expertos de la industria que durante horas comparten su conocimiento</p>
+                    <a class="event-url" href="https://www.youtube.com/watch?v=Nb_lsnx8BoQ&list=RDNb_lsnx8BoQ&start_radio=1" target="_blank">Ver Platica</a>
+                </div>
+            </article>
+        </div>
     </section>
     <section id="contacto" class="contact">
-        <form action="/suscripcion/" class="form-email">
-        <h3>CREAMOS ALGO JUNTOS?</h3>
-            <input type="text" placeholder="Dejanos tu email" id="email"/>
-            <button >Enviar</button>
-        </form>
+        <div class="container">
+            <form  action="" class="form-email">
+            <h3>CREAMOS ALGO JUNTOS?</h3>
+                <input  type="text" placeholder="Dejanos tu email" id="email"/>
+                <button >Enviar</button>
+            </form>
+            <div class="social">
+                <a href="https://twitter.com/JulioGragirena" class="social-link twitter"></a>
+                <a href="https://www.facebook.com/julio.colmenares.12914" class="social-link facebook"></a>
+                <a href="https://www.instagram.com/julio_gragirena/" class="social-link instagram"></a>
+                <a href="https://github.com/Juliogragirena" class="social-link github"></a>
+            </div>
+        </div>
     </section>
-    <footer class="footer">footedsdsdr dsds hola</footer>
+    <footer class="footer">
+        <div class="container">
+            <div>
+                <p>Fecha de creacion 16 de junio de 2020</p>
+            </div>
+            <div>
+                <p>Disigned by Julio Gragirena</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
