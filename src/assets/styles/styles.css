@@ -1,42 +1,9 @@
-/* reglas
-seelectores
-declaraciones 
-propiedades
-valores */
-
-/* selector de etiqueta */
-/* header{
-    background: rgb(255, 255, 255) ;
-    text-decoration:none
-}
-
-
-a {
-    text-decoration: none;
-}
- */
-
-/* selector de descendente */
-/* body header div nav ol li a  */
-
-/* selector de clase */
-
-/* .link {
-    background-color: red;
-} */
-
-/* selector de id */
-/* #contacto {
-    background-color: red;
-} */
-
 body {
     font-family: 'Source Sans Pro';
     margin: 0px;
 }
 .menu {
     height: 100px;
-    /* margin: 10px 11px 12px ; */
 }
 
 .header {
@@ -64,8 +31,6 @@ body {
     align-items: center;
     padding: 0 10px;
 }
-
-
 
 ol , li {
     list-style: none;
@@ -116,6 +81,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .hero-image{
     object-fit: cover;
@@ -137,6 +103,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .project-title {
@@ -159,10 +126,13 @@ h2 {
     font-family: 'Fjalla One';
 }
 .project-details {
-    width: 500px;
+    width: 50%;
 }
 .project-imageContainer {
-    width: 500px;
+    width: 50%;
+}
+.project-imageContainer img{
+    max-width: 100%;
 }
 
 .event-list {
@@ -201,16 +171,12 @@ h2 {
 
 }
 .event {
-    margin: 10px;
-    width: 480px;
+    margin: 1%;
+    width: 48%;
     flex-shrink: 0;
     border-radius: 10px;
     overflow: hidden;
     background: #f4fbff;
-}
-
-.titulo-experiencias{
-    margin:20px
 }
 
 .contact {
@@ -220,7 +186,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    flex-wrap: wrap;
 }
 .footer {
     background-color:#1b2127 ;
@@ -229,6 +195,12 @@ h2 {
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+    flex-wrap: wrap;
+}
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .social a {
@@ -283,11 +255,158 @@ h2 {
 }
 
 .container {
-    /* border: 1px solid red; */
-    width: 1000px;
+
+    max-width: 1000px;
+    /* width: 100%; */
+    flex: 1;
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
     height: inherit;
-    flex-wrap: inherit;
+    flex-wrap: wrap;
+}
+
+.titulo-experiencias{
+    margin:20px
+}
+
+.html-video {
+    max-width: 100%;
+    /* height: auto; */
+
+}
+
+@media screen and (max-width:1024px) {
+    .container {
+        padding: 0 1em;
+    }
+    .hero {
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        padding: 2em
+    }
+    .hero-image{
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0px;
+        width: 100%;
+    }
+    h1 {
+        font-size: 2em;
+        z-index: 2;
+    }
+    .html-video {
+        width: 100%;
+        height: auto;
+
+    }
+}
+
+@media screen and (max-width:767px){
+    
+    .header {
+        display: block;
+        height: auto;
+    }
+    .header ol {
+        display:block
+    }
+    .header ol li {
+        height: 50px;
+    }
+    .header a {
+        justify-content: center;
+    }
+    .logo {
+        text-align: center;
+    }
+    .menu {
+        height: auto;
+    }
+
+    .project {
+        display: block;
+    }
+
+    .project-imageContainer {
+        width: auto;
+        text-align: center;
+    }
+    .project-details {
+        width: auto;
+        font-size: 16px ;
+    }
+    .project-title{
+        font-size: 1.5em;
+        margin-bottom: .3em;
+    }
+    .project-url{
+        font-size: 1em
+    }
+    .project-course{
+        font-size: .7em
+    }
+    .project-date{
+        font-size: 1em
+    }
+    .project-decription{
+        font-size: .8em
+    }
+    .project-course, 
+    .project-date,
+    .project-url {
+         margin: .4em 0;
+    }
+    .event {
+        width: auto;
+        flex-shrink: initial;
+    }
+    .event img {
+        width: 100% ;
+    }
+}
+
+@media screen and (max-width:480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    .project-details {
+        font-size: 12px ;
+    }
+    .event-detail{
+        /* 1em = 16px */
+        margin: -2em .5em .5em;
+        padding: 1em;
+    }
+    .contact {
+        height: auto;
+        padding: 1em 0;
+        text-align: center;
+        display: block;
+    }
+    .form-email button{
+        margin: 1em auto;
+    }
+    .form-email h3 {
+        margin-top: 0;
+    }
+
+    .footer {
+        display: block;
+        text-align: center;
+        padding: 1px;
+        
+    }
+}
+
+@media screen and (max-width:320px) {
+    h1 {
+        font-size: 1.2em;
+        padding: 2em 1em;
+    }
 }
