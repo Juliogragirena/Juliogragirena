@@ -269,12 +269,11 @@ h2 {
 .titulo-experiencias{
     margin:20px
 }
-
+/* 
 .html-video {
     max-width: 100%;
-    /* height: auto; */
-
-}
+     height: auto; 
+} */
 
 @media screen and (max-width:1024px) {
     .container {
@@ -299,12 +298,12 @@ h2 {
         font-size: 2em;
         z-index: 2;
     }
-    .html-video {
+    /* .html-video {
         width: 100%;
         height: auto;
 
     }
-}
+} */
 
 @media screen and (max-width:767px){
     
