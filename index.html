@@ -13,7 +13,10 @@
 
     </style>
 </head>
-<body>
+<body class="body">
+    <div class="container">
+        <i class="icon-menu burger-button" id="burger-menu" ></i>
+    </div>
     <header class="header">
         <div class="container">
             <figure class="logo">
@@ -138,5 +141,32 @@
             </div>
         </div>
     </footer>
+    <script>
+        const ipad = (window.matchMedia('screen and (max-width:767px)'))
+        console.log(ipad)
+        const menu = document.querySelector('.menu');
+        // console.log(menu);
+        const burgerButton =  document.getElementById('burger-menu')
+        // console.log(burgerButton)
+
+        ipad.addListener(validation)
+
+        function validation (event){
+            if(event.matches){
+                burgerButton.addEventListener('click', showHide)
+            } else{
+                burgerButton.removeEventListener('click', showHide)
+            }
+        }
+        validation(ipad)
+
+        function showHide() {
+            if (!menu.classList.contains('is-active')) {
+                menu.classList.add('is-active');
+            }else {
+                menu.classList.remove('is-active');
+            }
+        }
+    </script>
 </body>
 </html>
